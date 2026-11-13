@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff1f5;
+    color: #733c50;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    background: #fff;
+    box-shadow: 0 3px 15px #00000010;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e75480;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #733c50;
+    font-size: 13px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #e75480;
+}
+
+button {
+    cursor: pointer;
+}
+
+#musicBtn {
+    background: #e75480;
+    color: white;
+    border: none;
+    padding: 10px 17px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    
+
+}
+
+/* Home */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 50px 8%;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.small-title {
+    color: #e75480;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(40px, 6vw, 70px);
+    margin-top: 20px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    color: #e75480;
+    margin: 15px 0;
+}
+
+.hero p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+    border: 12px solid white;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px #e7548030;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background: #e75480;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #bd315e;
+    transform: translateY(-3px);
+}
+
+/* Headings */
+
+.page-heading {
+    text-align: center;
+    padding: 80px 20px 45px;
+}
+
+.page-heading h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(35px, 6vw, 55px);
+    margin: 15px 0;
+}
+
+.page-heading p {
+    line-height: 1.8;
+}
+
+/* Story Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px 8%;
+}
+
+.card {
+    background: white;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px #e7548015;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    color: #e75480;
+    margin-bottom: 15px;
+}
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px 8%;
+}
+
+.gallery-item {
+    background: white;
+    padding: 12px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-item h3 {
+    padding: 15px 5px;
+    font-size: 15px;
+}
+
+/* Letter */
+
+.letter-container {
+    padding: 30px 8%;
+}
+
+.letter {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px #e7548020;
+}
+
+.letter h2 {
+    color: #e75480;
+    margin-bottom: 25px;
+}
+
+.letter p {
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.letter h3 {
+    color: #e75480;
+    margin-top: 25px;
+}
+
+.signature {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    padding-top: 20px;
+}
+
+/* Surprise */
+
+.surprise-section {
+    text-align: center;
+    min-height: 75vh;
+    padding: 80px 20px;
+}
+
+.surprise-section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+.gift {
+    background: transparent;
+    border: none;
+    font-size: 110px;
+    margin: 30px;
+    transition: .3s;
+}
+
+.gift:hover {
+    transform: scale(1.2) rotate(8deg);
+}
+
+.gift-message {
+    display: none;
+    max-width: 550px;
+    margin: 30px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    animation: appear .7s ease;
+}
+
+.gift-message.show {
+    display: block;
+}
+
+.gift-message h2 {
+    color: #e75480;
+    margin: 15px 0;
+}
+
+.gift-message p {
+    line-height: 1.9;
+}
+
+/* Footer */
+
+.next-page {
+    text-align: center;
+    padding: 35px;
+}
+
+footer {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    color: #e75480;
+}
+
+/* Animations */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+
+@media(max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 18px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 13px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .hero-image img {
+        width: min(100%, 300px);
+        height: 350px;
+    }
+
+    .cards,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    .letter {
+        padding: 25px;
+    }
+
+    .surprise-section h1 {
+        font-size: 35px;
+    }
+}
